@@ -3,6 +3,8 @@ const { token } = process.env;
 const { Client, Collection, GatewayIntentBits } = require("discord.js");
 const fs = require("fs");
 
+// Ajouter les commentaires sur ce que les fonctions fait
+
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 client.commands = new Collection();
 client.buttons = new Collection();
