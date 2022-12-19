@@ -13,9 +13,12 @@ module.exports = (client) => {
       const { commands, commandArray } = client;
       for (const file of commandFiles) {
         const command = require(`../../commands/${folder}/${file}`);
+        // console.log(`Le nom de la commande est ${command.data.name}`);
+        // console.log(command);
         commands.set(command.data.name, command);
         commandArray.push(command.data.toJSON());
-        console.log(`Command : ${command.data.name} has been passed`);
+        // console.log(`Command : ${command.data.name} has been passed`);
+        console.log(commandArray);
       }
     }
     const clientId = "890608937592815638";
