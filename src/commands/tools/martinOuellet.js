@@ -8,7 +8,6 @@ module.exports = {
       fetchReply: true,
     });
     const user = client.users.cache.get("141609951989727232");
-    console.log(user);
     const newMessage = `<@${user.id}> is still fedding even in iron`;
     await interaction.editReply({
       content: newMessage,
